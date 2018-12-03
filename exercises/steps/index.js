@@ -17,6 +17,23 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+  // iterate  through a for loop n times
+  // 
+  
+  for(let x = 0; x < n; x += 1) {
+    let string = '';
+    for(let y = 0; y < n; y += 1) {
+      if(y + 1 <= x){
+        string += '#';
+      } else {
+        string += ' ';
+      }
+    }
+    console.log(string);
+  }
+}
+
+steps(3);
 
 module.exports = steps;
